@@ -73,6 +73,7 @@ export default class PublisherGoogleStorage {
         await bucket.upload(artifact.path, {
           gzip: true,
           destination,
+          resumable: false,
           metadata: {
             "cache-control": "public, max-age=31536000" // 1 year
           },
@@ -95,6 +96,7 @@ export default class PublisherGoogleStorage {
           gzip: true,
           destination: `${artifact.platform}/manifest.json`,
           contentType: "application/json",
+          resumable: false,
           metadata: {
             "cache-control": "public, max-age=60" // 1 minute
           },
