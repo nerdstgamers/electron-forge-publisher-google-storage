@@ -10,14 +10,15 @@ This publisher supports `electron-forge@6`.
 
 Example config:
 
-```js
-"forge": {
-  "googleCloudStorage": {
-    "projectId": "project-1",
-    "bucket": "download.domain.com",
-    "storageUrl": "https://download.domain.com"
-    "public": true
-  }
+```javascript
+{
+  name: '@nerdstgamers/electron-forge-publish-google-storage',
+  config: {
+    projectId: 'my-google-cloud-project',
+    bucket: 'bucket-to-store-updates-in',
+    public: true,
+    storageUrl: 'https://assets.my-project.com',
+  },
 }
 ```
 
