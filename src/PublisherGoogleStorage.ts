@@ -65,7 +65,7 @@ export default class PublisherGoogleStorage {
     const bucket = storage.bucket(config.bucket);
     const version = makeResults[0].packageJSON.version;
     let downloadPath = "";
-    const resumable = config.resumable ?? true;
+    const resumable = typeof config.resumable !== 'undefined' ? config.resumable : true;
 
     // Upload artifacts - Manifest only supports one for now
     await Promise.all(
