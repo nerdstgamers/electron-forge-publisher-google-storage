@@ -1,7 +1,7 @@
 {
   "name": "@nerdstgamers/electron-forge-publish-google-storage",
   "description": "Electron Forge publisher for Google Cloud Storage with fixes for GitHub Actions",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "main": "dist/PublisherGoogleStorage.js",
   "module": "dist/PublisherGoogleStorage.mjs",
   "source": "src/PublisherGoogleStorage.ts",
